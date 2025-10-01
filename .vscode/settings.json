@@ -1,4 +1,4 @@
 {
-    "git.enableCommitSigning": true,
+    "git.enableCommitSigning": false,
     "git.ignoreLimitWarning": true
 }
