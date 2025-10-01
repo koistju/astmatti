@@ -1,0 +1,12 @@
+[
+    {
+        "pincode" : "2018",
+        "description" : "Configuration for youngs",
+        "chat_file_prefix" : "chat_youngs_"
+    },
+    {
+        "pincode" : "2019",
+        "description" : "Configuration for adults",
+        "chat_file_prefix" : "chat_adults_"
+    }
+]

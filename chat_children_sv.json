@@ -1,0 +1,314 @@
+[
+  {
+    "Id": 1,
+    "Text": "SWEDEN: Sopiiko esittäytyä, olen hengitysoireita selvittävä sovellus, Astmatti. Lääkärinne on käsitellyt lapsestanne tulleen lähetteen ja pyytänyt minua näyttämään mitä juuri meidän olisi hyvä käydä läpi ennen lääkärikäyntiä. Tavoitteena että on kertoa lapselle tulevasta tutkimuskäynnistä, jotta tutkimukset onnistuisivat mahdollisimman hyvin. Minä, Astmatti voin halutessasi tallentaa myös tietoja esimerkiksi mahdollisista oireista, joita ilmaantuu, jolloin paperista kirjanpitoa ei tarvita. Jatketaanko eteenpäin?",
+    "Buttons": [
+      {
+        "Id": 1,
+        "Text": "Jatketaan vaan",
+        "NextId": 2
+      },
+      {
+        "Id": 2,
+        "Text": "Jatketaan myöhemmin",
+        "NextId": 3
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 2,
+    "Text": "Hyvä. Siirrytäänpä omat tietoni kirjausikkunaan!",
+    "Buttons": null,
+    "Action": "PERSONAL_DATA",
+    "NextId": 4,
+    "Tag": "23"
+  },
+  {
+    "Id": 3,
+    "Text": "Ok palataan asiaan myöhemmin!",
+    "Buttons": [
+      {
+        "Id": 3,
+        "Text": "Jatketaanko taas",
+        "NextId": 1
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 4,
+    "Text": "Hienoa, nyt omat tietosi on tallennettu. Jatketaanko %name% eteenpäin?",
+    "Buttons": [
+      {
+        "Id": 4,
+        "Text": "Sopii",
+        "NextId": 13
+      },
+      {
+        "Id": 5,
+        "Text": "Palataan asiaan paremmalla ajalla.",
+        "NextId": 6
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 5,
+    "Text": "Tästä luettelosta näet mitä asioita lääkärisi toivoo sinun tekevän hyvissä ajoin ennen vastaanottoa. \r\n- PEF-mittarin käyttöä opastava video.\r\n- Lääkkeenotto easyhaler tai diskus annostimella –video.\r\n- lääkitykseen liittyviä ohjeita (kortisonit tauolle).\r\n- PEF-mittaukset (yhteensä 14 päivää)\r\n- Tekemään tarvittaessa ylimääräisiä PEF-puhalluksia, jos koet hengitysoireita erityisesti uloshengitysvaikeutta\r\n\r\nNoin reilu viikko ennen seuraavaa sairaanhoitajan ja lääkärin vastaanottoa tulee erityisen paljon ohjeita, jotta osaat valmistautua vastaanotolle oikein: \r\n- katsomaan ohjeen valmistautumisesta juoksurasitukseen\r\n- katsomaan spirometria-videon\r\n- lääkkeet tauolle –ohje\r\n- prick-ohje\r\n\r\nHaluatko että kerron lisää?\r\n\r\n",
+    "Buttons": [
+      {
+        "Id": 6,
+        "Text": "Ok. Kerro lisää ",
+        "NextId": 16
+      },
+      {
+        "Id": 7,
+        "Text": "Astmatti, tuli jo paljon tietoa, kiitos siitä mutta palataan asiaan myöhemmin. Näkemiin!",
+        "NextId": 15
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 6,
+    "Text": "OK! Voit avata minut, siis Astmatti-sovelluksen, kun sinulla on parempi hetki. Jos sattuisi käymään niin että et muista minua, ei hätää, otan sinuun kyllä pian yhteyttä😊",
+    "Buttons": [
+      {
+        "Id": 11,
+        "Text": "No niin, jatketaan",
+        "NextId": 13
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 7,
+    "Text": "Jos edeltävä lääkärisi on määrännyt sinulle astmaa hoitava hengitettävän kortisonilääkeen, niin se tulisi jättää tauolle astmaselvittelyn ajaksi, mikäli vointisi sallii tauotuksen. ",
+    "Buttons": [
+      {
+        "Id": 9,
+        "Text": "En käytä astman hoitavaa kortisonilääkettä ",
+        "NextId": 12
+      },
+      {
+        "Id": 10,
+        "Text": "Kerro lisää",
+        "NextId": 12
+      },
+      {
+        "Id": 17,
+        "Text": "En oikein tiedä, onko hyvä tauottaa lääkettä. Miksi?",
+        "NextId": 12
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 12,
+    "Text": "Katso OYS astman hoitava lääke tauolle -ohje",
+    "Buttons": null,
+    "Action": "OPEN_GUIDE",
+    "NextId": 20,
+    "Tag": null
+  },
+  {
+    "Id": 10,
+    "Text": "Mañana!",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 11,
+    "Text": "Kiitos kun katsoit ohjeen",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 13,
+    "Text": "Haluatko kuulla mitä vastaanottoa edeltäviä asioita lääkärisi on suunnitellut sinulle? ",
+    "Buttons": [
+      {
+        "Id": 12,
+        "Text": "Kerro lisää suunnitelmasta ",
+        "NextId": 5
+      },
+      {
+        "Id": 13,
+        "Text": "Palataan asiaan myöhemmin ",
+        "NextId": 14
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 14,
+    "Text": "Selvä, palataan asiaan myöhemmin.",
+    "Buttons": [
+      {
+        "Id": 25,
+        "Text": "Yes, jatketaan",
+        "NextId": 5
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 15,
+    "Text": "Nähdään pian!",
+    "Buttons": [
+      {
+        "Id": 26,
+        "Text": "Ok, jatketaan",
+        "NextId": 16
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 16,
+    "Text": "Hyvä! Tavoitteena on, että lääkärin vastaanottoa edeltävästi saamme toteutettua PEF-puhallussarjan jossa puhalluksia tehdään 3 kertaa ennen avaavaa lääkettä ja 3 kertaa lääkkeen oton jälkeen.  Puhallussarjoja jatketaan aamuin ja illoin 2 viikon ajan.  Onko sinulla jo PEF-mittari ja keuhkoputkia avaavaa lääkettä?",
+    "Buttons": [
+      {
+        "Id": 14,
+        "Text": "Kyllä, siirry videoihin",
+        "NextId": 18
+      },
+      {
+        "Id": 15,
+        "Text": "Ei vielä, mutta näytä videot silti",
+        "NextId": 18
+      },
+      {
+        "Id": 16,
+        "Text": "Palataan asiaan, kun minulla on PEF- mittari ja avaavaa lääkettä",
+        "NextId": 17
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 17,
+    "Text": "Sopii hyvin. Muuten. PEF-mittareita saa mm. apteekeista",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 18,
+    "Text": "Katsomme siis läpi pari videota, joista ensimmäinen opastaa käyttämään PEF-mittaria (%link_0%) ja toinen (%link_1%) ottamaan avaavaa lääkettä mahdollisimman oikeaoppisesti. Videot kestävät muutaman minuutin ajan.",
+    "Buttons": null,
+    "Action": "SHOW_VIDEO",
+    "NextId": 19,
+    "Tag": "http://s4h.fi/indemand/PEF.mp4;http://s4h.fi/indemand/Easyhaler_2.mp4"
+  },
+  {
+    "Id": 19,
+    "Text": "PEF- puhalluksia suositellaan tekemään ennen ja jälkeen keuhkoputkia avaavan lääkkeen.\r\nPEF- mittauksia tulisi siis tehdä yhteensä 14 päivän aikana aamuin ja illoin. Aamupuhallukset ovat kaikkein luotettavimmat, mikäli ne voit tehdä ne heti heräämisen jälkeen. 14 päivän PEF- puhallussarjaa ei suositella tekemään on hengitystieinfektiossa. Käytätkö muuten älypuhelimen herätyskelloa? ",
+    "Buttons": [
+      {
+        "Id": 18,
+        "Text": "Joo",
+        "NextId": 20
+      },
+      {
+        "Id": 19,
+        "Text": "En, miksi kysyt? ",
+        "NextId": 20
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 20,
+    "Text": "Minä, Astmatti- sovellus voin muistuttaa aamuherätyksen yhteydessä PEF- puhalluksista kunnes saamme tarvittavat mittaussarjat tehtyä. Haluatko että muistutan PEF-puhalluksista? ",
+    "Buttons": [
+      {
+        "Id": 20,
+        "Text": "Voit muistuttaa älypuhelimen herätyskellon soidessa aamulla PEF- puhalluksista.",
+        "NextId": 21
+      },
+      {
+        "Id": 21,
+        "Text": "Voit muistuttaa merkitsemääni kellon aikaan PEF-puhalluksista ",
+        "NextId": 21
+      },
+      {
+        "Id": 22,
+        "Text": "Ei kiitos. Huolehdin itse puhalluksista.",
+        "NextId": 21
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 21,
+    "Text": "Oletko muuten jo kuullut mitä tarkoittaa ylimääräiset oirepuhallukset? ",
+    "Buttons": [
+      {
+        "Id": 23,
+        "Text": "En, kerro lisää ",
+        "NextId": 22
+      },
+      {
+        "Id": 24,
+        "Text": "Olen",
+        "NextId": 22
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 22,
+    "Text": "Hyvä! 14 päivän aamu- ja iltapuhallusten lisäksi on tärkeää tehdä ja merkata ylös PEF-puhallukset aina, jos tulee astmaan viittaavia oireita kuten uloshengitysvaikeutta. Oirepuhalluksia toistetaan 3 peräkkäistä kertaa, otetaan keuhkoputkia avaava lääkitys ja 15-20 minuuttia avaavan lääkkeen jälkeen toistetaan 3 peräkkäistä puhallusta. Saat kirjattua PEF-puhallukset alareunan ”mittauksiin kohdasta”",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 23,
+    "Text": "Ok, jatketaan kun voit syöttää omat tietosi",
+    "Buttons": [
+      {
+        "Id": 27,
+        "Text": "Jatketaan taas",
+        "NextId": 2
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "Id": 1,
+    "Text": "Kan jeg  fortelle litt om meg selv. Jeg er programvare, AstMari, som utreder luftveissymptomer. Legen din har behandlet din henvisningen og bedt meg om å gjennomgå med deg hva som er viktig å vite før et legebesøk. Jeg, AstMari kan lagre dine data om PEF- metriverdier om du ønsker. Da trenger vi ikke skrive dette på papir. Skal vi fortsette videre?",
+    "Buttons": [
+      {
+        "Id": 1,
+        "Text": "Ja",
+        "NextId": 2
+      },
+      {
+        "Id": 2,
+        "Text": "Vi kan snakkes senere.",
+        "NextId": 3
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 2,
+    "Text": "Bra! Da flytter vi oss til mine opplysninger i registreringsskjermbildet. ",
+    "Buttons": null,
+    "Action": "PERSONAL_DATA",
+    "NextId": 4,
+    "Tag": null
+  },
+  {
+    "Id": 3,
+    "Text": "Ok, vi sees senere!",
+    "Buttons": [
+      {
+        "Id": 3,
+        "Text": "Skal vi fortsette?",
+        "NextId": 1
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 4,
+    "Text": "Nå har vi registrert personopplysninger. Skal vi fortsette %name% videre?",
+    "Buttons": [
+      {
+        "Id": 4,
+        "Text": "Ja det går bra!",
+        "NextId": 5
+      },
+      {
+        "Id": 5,
+        "Text": "Vi kan fortsette senere når det passer bedre.",
+        "NextId": 6
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 5,
+    "Text": "Her er en liste over ting legen din ønsker å gjennomgå før konsultasjonen.\r\n- Se veiledningsvideo om bruk av PEF.\r\n- Se opplæringsvideo om riktig brukerteknikk for Turbohaler eller Discus inhalatorer.\r\n- Les gjennom instruksjonene angående medisinering.\r\n- Registrere PEF verdier (tilsammen 14 dager)\r\n- Utfør ekstra registreringsblåsninger, om du har luftveissymptomer.\r\nDet blir en del beskjeder ca en uke før neste sykepleier/ lege konsultasjon slik at du kan forberede deg på riktig måte:\r\n- Se gjennom veilederen for forberedelsene til tredemølletest.\r\n- Se Spirometri -video\r\n- pause med medisinen -instruksjon\r\n- Prick -instruksjon\r\n\r\n",
+    "Buttons": [
+      {
+        "Id": 6,
+        "Text": "Jeg bruker ikke forebyggendemedisin for astma i form av kortison til inhalasjon",
+        "NextId": 7
+      },
+      {
+        "Id": 7,
+        "Text": "Fortel meg mer",
+        "NextId": 8
+      },
+      {
+        "Id": 8,
+        "Text": "Jeg vet ikke om jeg kan pause denne medisinenen. Hvorfor?",
+        "NextId": 8
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 6,
+    "Text": "Ok! Du kan åpne meg, AstMari -appen, når det passer bedre for deg.Om det skulle hende at du ikke husker på meg, så ingen bekymring.  Jeg kontakter deg snart igjen!",
+    "Buttons": [
+      {
+        "Id": 11,
+        "Text": "Jatketaanko?",
+        "NextId": 12
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 7,
+    "Text": "Onko lapsellenne määrätty keuhkoputkia avaavaa lääkettä?",
+    "Buttons": [
+      {
+        "Id": 9,
+        "Text": "On",
+        "NextId": 12
+      },
+      {
+        "Id": 10,
+        "Text": "Ei",
+        "NextId": 10
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 12,
+    "Text": "Katsomalla lääkkeenotto babyhalerilla –videon voitte varmistaa että osaatte antaa lapsenne avaavan lääkkeen oikealla tavalla",
+    "Buttons": null,
+    "Action": "OPEN_GUIDE",
+    "NextId": 11,
+    "Tag": null
+  },
+  {
+    "Id": 10,
+    "Text": "Mañana!",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 11,
+    "Text": "Kiitos kun katsoit videon",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  }
+]

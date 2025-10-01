@@ -1,0 +1,143 @@
+[
+  {
+    "Id": 1,
+    "Text": "Sopiiko esittäytyä, olen hengitysoireita selvittävä sovellus, Astmatti. Lääkärinne on käsitellyt lapsestanne tulleen lähetteen ja pyytänyt minua näyttämään mitä juuri meidän olisi hyvä käydä läpi ennen lääkärikäyntiä. Tavoitteena että on kertoa lapselle tulevasta tutkimuskäynnistä, jotta tutkimukset onnistuisivat mahdollisimman hyvin. Minä, Astmatti voin halutessasi tallentaa myös tietoja esimerkiksi mahdollisista oireista, joita ilmaantuu, jolloin paperista kirjanpitoa ei tarvita. Jatketaanko eteenpäin?",
+    "Buttons": [
+      {
+        "Id": 1,
+        "Text": "Jatketaan vaan",
+        "NextId": 2
+      },
+      {
+        "Id": 2,
+        "Text": "Jatketaan myöhemmin.",
+        "NextId": 3
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 2,
+    "Text": "Hyvä. Siirrytäänpä omat tietoni kirjausikkunaan!",
+    "Buttons": null,
+    "Action": "PERSONAL_DATA",
+    "NextId": 4,
+    "Tag": null
+  },
+  {
+    "Id": 3,
+    "Text": "Ok palataan asiaan myöhemmin!",
+    "Buttons": [
+      {
+        "Id": 3,
+        "Text": "Jatketaanko?",
+        "NextId": 1
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 4,
+    "Text": "Hienoa, nyt omat tietosi on tallennettu. Jatketaanko %name% eteenpäin?",
+    "Buttons": [
+      {
+        "Id": 4,
+        "Text": "Sopii",
+        "NextId": 5
+      },
+      {
+        "Id": 5,
+        "Text": "Palataan asiaan paremmalla ajalla.",
+        "NextId": 6
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 5,
+    "Text": "Tästä luettelosta näet mitä asioita lääkärisi toivoo teidän tekevän hyvissä ajoin ennen vastaanottoa. \r\n- lääkitykseen liittyviä ohjeita (kortisonit tauolle) \r\n- Kirjaamaan oireita jos lapsi kokee hengitysoireita, erityisesti uloshengitysvaikeutta\r\n\r\nReilu viikko ennen seuraavaa sairaanhoitajan ja lääkärin vastaanottoa tulee runsaasti ohjeita jotta osaatte valmistautua vastaanotolle oikein:\r\n- lääkkeet tauolle –ohje \r\n- Impulssioskillometria\r\n- prick-ohje \r\n\r\nJos edeltävä lääkärisi on määrännyt lapsellesi astmaa hoitava hengitettävän kortisonilääkkeen ja montelukastin, niin se tulisi jättää tauolle 4 viikkoa ennen käynnille tuloa, mikäli lapsesi vointi sallii tauotuksen. \r\n",
+    "Buttons": [
+      {
+        "Id": 6,
+        "Text": "Emme käytä astman hoitavaa kortisonilääkettä",
+        "NextId": 7
+      },
+      {
+        "Id": 7,
+        "Text": "Kerro lisää",
+        "NextId": 8
+      },
+      {
+        "Id": 8,
+        "Text": "En oikein tiedä, onko hyvä tauottaa lääkettä. Miksi?",
+        "NextId": 8
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 6,
+    "Text": "OK! Voit avata minut, siis Astmatti-sovelluksen, kun sinulla on parempi hetki. Jos sattuisi käymään niin että et muista minua, ei hätää, otan sinuun kyllä pian yhteyttä😊",
+    "Buttons": [
+      {
+        "Id": 11,
+        "Text": "Jatketaanko?",
+        "NextId": 12
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 7,
+    "Text": "Onko lapsellenne määrätty keuhkoputkia avaavaa lääkettä?",
+    "Buttons": [
+      {
+        "Id": 9,
+        "Text": "On",
+        "NextId": 12
+      },
+      {
+        "Id": 10,
+        "Text": "Ei",
+        "NextId": 10
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 12,
+    "Text": "Katsomalla lääkkeenotto babyhalerilla –videon voitte varmistaa että osaatte antaa lapsenne avaavan lääkkeen oikealla tavalla",
+    "Buttons": null,
+    "Action": "OPEN_GUIDE",
+    "NextId": 11,
+    "Tag": null
+  },
+  {
+    "Id": 10,
+    "Text": "Mañana!",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 11,
+    "Text": "Kiitos kun katsoit videon",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  }
+]

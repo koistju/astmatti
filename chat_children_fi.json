@@ -1,0 +1,355 @@
+[
+  {
+    "Id": 1,
+    "Text": "Hei! Olen Astmatti, ja voin auttaa selvittelemään hengitysoireitasi. Aloitetaanko?",
+    "Buttons": [
+      {
+        "Id": 26,
+        "Text": "Kyllä",
+        "NextId": 28
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 4,
+    "Text": "Hienoa, nyt omat tietosi on tallennettu. Jatketaanko %name% eteenpäin?",
+    "Buttons": [
+      {
+        "Id": 4,
+        "Text": "Sopii!",
+        "NextId": 13
+      },
+      {
+        "Id": 5,
+        "Text": "Ei nyt.",
+        "NextId": 6
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 6,
+    "Text": "Ok, palataan myöhemmin!😊",
+    "Buttons": [
+      {
+        "Id": 6,
+        "Text": "Jatketaanko?",
+        "NextId": 13
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 13,
+    "Text": "Yksi tärkeä asia ennen lääkärikäyntiä on tehdä sarja PEF-mittauksia 2 viikon ajan. | Puhalluksia tehdään aamuin ja illoin, 3 puhallusta ennen sekä jälkeen avaavan lääkkeen. Kannattaa katsoa ohjevideo jotta puhallukset tulee tehtyä oikein. ",
+    "Buttons": null,
+    "Action": "SHOW_VIDEO",
+    "NextId": 14,
+    "Tag": null,
+    "Url_extra": [
+      {
+        "Url": "http://s4h.fi/indemand/fi/PEF.mp4",
+        "Name": "Pef mittaus",
+        "Thumbnail": "http://s4h.fi/indemand/no/PEF.png"
+      }
+    ]
+  },
+  {
+    "Id": 14,
+    "Text": "Tässä vielä toinen ohjevideo avaavan lääkkeen ottamisesta",
+    "Buttons": null,
+    "Action": "SHOW_VIDEO",
+    "NextId": 23,
+    "Tag": null,
+    "Url_extra": [
+      {
+        "Url": "http://s4h.fi/indemand/fi/Easyhaler.mp4",
+        "Name": "Avaavan lääkkeen ottaminen",
+        "Thumbnail": "http://s4h.fi/indemand/fi/Easyhaler.png"
+      }
+    ]
+  },
+  {
+    "Id": 15,
+    "Text": "Lääkitys olisi hyvä jättää tauolle astmaselvittelyn ajaksi jos tauolle ei ole esteitä?",
+    "Buttons": [
+      {
+        "Id": 27,
+        "Text": "En ole varma voinko jättää hoitavaa kortisonilääkettä tauolle ",
+        "NextId": 29
+      },
+      {
+        "Id": 28,
+        "Text": "Ymmärsin, jätän tauolle hengitettävän kortisonilääkkeen ",
+        "NextId": 29
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": [
+      {
+        "Url": "http://s4h.fi/indemand/fi/juoksu.html",
+        "Name": "Juoksurasitustesti",
+        "Thumbnail": "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"
+      }
+    ]
+  },
+  {
+    "Id": 17,
+    "Text": "Ok, siinäpä oli tärkeimmät asiat näin aluksi. Haluaisitko aloittaa PEF-mittaussarjan jo huomenna?",
+    "Buttons": [
+      {
+        "Id": 30,
+        "Text": "Kyllä vaan",
+        "NextId": 18
+      },
+      {
+        "Id": 31,
+        "Text": "Aloitan myöhemmin",
+        "NextId": 22
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 18,
+    "Text": "Hyvä. Oletko terve tällä hetkellä? Mittaussarjaa ei olisi hyvä tehdä, jos on flunssaa tai kuumetta.",
+    "Buttons": [
+      {
+        "Id": 15,
+        "Text": "Joo olen terve ",
+        "NextId": 25
+      },
+      {
+        "Id": 16,
+        "Text": "On kyllä vähän flunssa ",
+        "NextId": 21
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 19,
+    "Text": "Käytätkö kortisonilääkitystä astmasi hoitoon?",
+    "Buttons": [
+      {
+        "Id": 13,
+        "Text": "Kyllä",
+        "NextId": 15
+      },
+      {
+        "Id": 14,
+        "Text": "En",
+        "NextId": 17
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 21,
+    "Text": "Kannattaa aloittaa mittaussarja myöhemmin ja ehdit kyllä hyvin vielä tehdä sen! | Muista, että jos sinulle ilmaantuu hengitystieoireita ja varsinkin hengitysvaikeutta vaikka olisitkin infektiossa, olisi hyvä tehdä ylimääräisiä oirepuhalluksia. | Pääset kirjaamaan oirepuhallukset painamalla kuvakkeesta \"mittauksiin\".",
+    "Buttons": [
+      {
+        "Id": 35,
+        "Text": "Selvä homma",
+        "NextId": 24
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 22,
+    "Text": "OK palataan myöhemmin asiaan ",
+    "Buttons": [
+      {
+        "Id": 19,
+        "Text": "Jatketaanko?",
+        "NextId": 30
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 23,
+    "Text": "PEF-puhallussarjan lisäksi on tärkeää tehdä tarvittaessa ns. oirepuhalluksia. | Oirepuhalluksilla tarkoitetaan ylimääräisiä PEF-puhalluksia aina, jos tulee astmaoireita (esimerkiksi rasituksessa, allergeenialtistuksessa tai yöllä). | Mikäli puhalluksissa havaitaan poikkeava PEF-arvo ja avaavan lääkkeen jälkeen oire ja arvot paranevat, lääkäri pystyy hyödyntämään tietoa astman selvittelyssä. | Pääset kirjaamaan oirepuhallukset painamalla kuvakkeesta \"mittauksiin\".\"mittauksiin\".",
+    "Buttons": [
+      {
+        "Id": 29,
+        "Text": "Ok, selvä juttu",
+        "NextId": 19
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 24,
+    "Text": "Hyvä juttu, pikaista paranemista ja mukavaa päivää!",
+    "Buttons": [
+      {
+        "Id": 36,
+        "Text": "Jatketaanko (5pv)",
+        "NextId": 30
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 25,
+    "Text": "Hyvä! Haluatko että muistutan sinua mittaussarjan mittauksista aamuin illoin?",
+    "Buttons": [
+      {
+        "Id": 22,
+        "Text": "Kiitos kyllä ",
+        "NextId": 31
+      },
+      {
+        "Id": 23,
+        "Text": "Ei kiitos",
+        "NextId": 26
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 26,
+    "Text": "Ok. Muista, että jos sinulle ilmaantuu hengitystieoireita ja varsinkin hengitystievaikeutta, olisi aina hyvä tehdä ylimääräisiä oirepuhalluksia mittaussarjan puhallusten lisäksi.     ",
+    "Buttons": [
+      {
+        "Id": 37,
+        "Text": "Selvä juttu",
+        "NextId": 32
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 27,
+    "Text": "OK palataan myöhemmin asiaan ",
+    "Buttons": [
+      {
+        "Id": 32,
+        "Text": "Jatketaanko (5pv)",
+        "NextId": 30
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 28,
+    "Text": "Tallennetaan aluksi muutama perustieto sinusta.",
+    "Buttons": null,
+    "Action": "PERSONAL_DATA",
+    "NextId": 4,
+    "Tag": 33,
+    "Url_extra": []
+  },
+  {
+    "Id": 29,
+    "Text": "Alla ohjeet Hoitava lääke tauolle tiedotteeseen",
+    "Buttons": null,
+    "Action": "OPEN_GUIDE",
+    "NextId": 17,
+    "Tag": null,
+    "Url_extra": [
+      {
+        "Url": "http://s4h.fi/indemand/fi/juoksu.html",
+        "Name": "Juoksurasitustesti",
+        "Thumbnail": "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"
+      }
+    ]
+  },
+  {
+    "Id": 30,
+    "Text": "Olisi hyvä aloittaa PEF-puhallussarja pikimmiten. Haluaisitko aloittaa jo huomenna? ",
+    "Buttons": [
+      {
+        "Id": 33,
+        "Text": "Joo aloitetaan vaan ",
+        "NextId": 18
+      },
+      {
+        "Id": 34,
+        "Text": "Aloitan myöhemmin ",
+        "NextId": 27
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 31,
+    "Text": "Valitse alta kellonajat, jolloin haluat muistutukset (rullavalikko + tallenna-nappi)",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 32,
+    "Text": "Hienoa, palataan asiaan huomisaamuna varsinaisen mittaussarjan merkeissä! Moikka! ",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  },
+  {
+    "Id": 33,
+    "Text": "OK palataan myöhemmin asiaan ",
+    "Buttons": [
+      {
+        "Id": 35,
+        "Text": "Jatketaanko perustietoihin?",
+        "NextId": 28
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null,
+    "Url_extra": []
+  }
+]

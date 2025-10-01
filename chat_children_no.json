@@ -1,0 +1,307 @@
+[
+  {
+    "Id": 1,
+    "Text": "Kan jeg  fortelle litt om meg selv. Jeg er programvare, AstMari, som utreder luftveissymptomer. Legen din har behandlet din henvisningen og bedt meg om å gjennomgå med deg hva som er viktig å vite før et legebesøk. Jeg, AstMari kan lagre dine data om PEF- metriverdier om du ønsker. Da trenger vi ikke skrive dette på papir. Skal vi fortsette videre?",
+    "Buttons": [
+      {
+        "Id": 1,
+        "Text": "Ja",
+        "NextId": 2
+      },
+      {
+        "Id": 2,
+        "Text": "Vi kan snakkes senere",
+        "NextId": 3
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 2,
+    "Text": "Bra! Da flytter vi oss til mine opplysninger i registreringsskjermbildet.",
+    "Buttons": null,
+    "Action": "PERSONAL_DATA",
+    "NextId": 4,
+    "Tag": 23
+  },
+  {
+    "Id": 3,
+    "Text": "Ok, vi sees senere!",
+    "Buttons": [
+      {
+        "Id": 3,
+        "Text": "Skal vi fortsette?",
+        "NextId": 1
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 4,
+    "Text": "Nå har vi registrert personopplysninger. Skal vi fortsette %name% videre?",
+    "Buttons": [
+      {
+        "Id": 4,
+        "Text": "Ja det går bra!",
+        "NextId": 13
+      },
+      {
+        "Id": 5,
+        "Text": "Vi kan fortsette senere når det passer bedre.",
+        "NextId": 6
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 5,
+    "Text": " Her er en liste over ting legen din ønsker å gjennomgå før konsultasjonen.\r\n- Se veiledningsvideo om bruk av PEF.\r\n- Se opplæringsvideo om riktig brukerteknikk for Turbohaler eller Discus inhalatorer.\r\n- Les gjennom instruksjonene angående medisinering.\r\n- Registrere PEF verdier (tilsammen 14 dager)\r\n- Utfør ekstra registreringsblåsninger, om du har luftveissymptomer.\r\n\r\nDet blir en del beskjeder ca en uke før neste sykepleier/ lege konsultasjon slik at du kan forberede deg på riktig måte:\r\n- Se gjennom veilederen for forberedelsene til tredemølletest.\r\n- Se Spirometri -video\r\n- pause med medisinen -instruksjon\r\n- Prick -instruksjon\r\n\r\nVi du vite mer?\r\n",
+    "Buttons": [
+      {
+        "Id": 6,
+        "Text": "Ja kom igjen",
+        "NextId": 16
+      },
+      {
+        "Id": 7,
+        "Text": "AstMari, jeg fikk allerede mye informasjon og takk for det, men kan vi snakkes seinere? Ha det!",
+        "NextId": 15
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 6,
+    "Text": "Ok! Du kan åpne meg, AstMari -appen, når det passer bedre for deg.Om det skulle hende at du ikke husker på meg, så ingen bekymring.  Jeg kontakter deg snart igjen!",
+    "Buttons": [
+      {
+        "Id": 11,
+        "Text": "Skal vi fortsette?",
+        "NextId": 13
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 7,
+    "Text": "Om fastlegen din har ordinert forebyggendemedisin for din astma i form av kortison til inhalasjon, bør du pause medisinen under utredningen av astmaen hvis formen din tillater dette.  ",
+    "Buttons": [
+      {
+        "Id": 9,
+        "Text": "Jeg bruker ikke forebyggendemedisin for astma i form av kortison til inhalasjon",
+        "NextId": 12
+      },
+      {
+        "Id": 10,
+        "Text": "Fortel meg mer",
+        "NextId": 12
+      },
+      {
+        "Id": 17,
+        "Text": "Jeg vet ikke om jeg kan pause denne medisinenen. Hvorfor?",
+        "NextId": 12
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 12,
+    "Text": "Se OYS instruksjonene",
+    "Buttons": null,
+    "Action": "OPEN_GUIDE",
+    "NextId": 20,
+    "Tag": null
+  },
+  {
+    "Id": 11,
+    "Text": "Tack",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 13,
+    "Text": "Vil du høre hva legen din har planlagt før deres møte?",
+    "Buttons": [
+      {
+        "Id": 12,
+        "Text": "Fortell meg mer",
+        "NextId": 5
+      },
+      {
+        "Id": 13,
+        "Text": "Vi snakkes senere.",
+        "NextId": 14
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 14,
+    "Text": "Vi kani snakkes seinere",
+    "Buttons": [
+      {
+        "Id": 25,
+        "Text": "Skal vi fortsette?",
+        "NextId": 5
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 15,
+    "Text": "Sees snart!",
+    "Buttons": [
+      {
+        "Id": 26,
+        "Text": "Skal vi fortsette?",
+        "NextId": 16
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 16,
+    "Text": "Bra! Målet før legetimen er at vi får gjennomført:\r\n3 spirometriregistrering før du har tatt medisinen og 3 registreringer etterpå.\r\nPustesierien gjentar du morgen og kveld i to uker. \r\nHar du PEF meter og utvidelses(anfalls)smedisin?",
+    "Buttons": [
+      {
+        "Id": 14,
+        "Text": "Ja, du kan fortsette til video",
+        "NextId": 18
+      },
+      {
+        "Id": 15,
+        "Text": "Ikke foreløpig, men vis meg video likevel",
+        "NextId": 18
+      },
+      {
+        "Id": 16,
+        "Text": "Du kan komme tibake til saken etter jeg har fått PEF meteren og utvidelses(anfalls)smedisin",
+        "NextId": 17
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 17,
+    "Text": "Det  går bra. Forresten, kan du kjøpe spirometeren på apoteket. ",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 18,
+    "Text": "Da viser jeg deg to videoer. Den første veileder hvordan PEF meter brukes og den andre hvordan du på riktig måte skal ta utvidelses(anfalls)smedisinene.\r\nVideoene varer et par minutter.",
+    "Buttons": null,
+    "Action": "SHOW_VIDEO",
+    "NextId": 19,
+    "Tag": [{"Url":"http://s4h.fi/indemand/no/PEF.mp4", "Name" : "Pef meter", "Thumbnail" : ".\\assets\\PEF_no.png"},
+            {"Url":"http://s4h.fi/indemand/fi/Easyhaler.mp4", "Name" : "Ta utvidelses(anfalls)smedisinene", "Thumbnail" : ".\\assets\\Easyhaler_no.png"}]
+},
+  {
+    "Id": 19,
+    "Text": "Det anbefales at du gjør PEF metrimålingene før og etter du har tatt utvidelse(anfalls)smedisin medisininering for bronkier.\r\nPEF metrimålingene burde man gjøre i en 14 dagersperiode både morgen og kveld. De riktigste målingene får du om morgenen rett etter at du har våknet. Det anbefales ikke å gjøre målinger hvis du har en luftveisinfeksjon. Bruker du Mobilen din som vekkerklokke? ",
+    "Buttons": [
+      {
+        "Id": 18,
+        "Text": "Ja",
+        "NextId": 20
+      },
+      {
+        "Id": 19,
+        "Text": "Nei, hvorfor spør du?",
+        "NextId": 20
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 20,
+    "Text": "Jeg, AstMari  kan minne deg på målingene når du våkner av vekkerklokken, til alle 14 dagene er gjennomført. Vil du at jeg skal minne på deg?",
+    "Buttons": [
+      {
+        "Id": 20,
+        "Text": "Du kan minne meg på målingene i forbindelse med vekkingen.",
+        "NextId": 21
+      },
+      {
+        "Id": 21,
+        "Text": "Du kan minne meg på målingene på den tiden jeg har satt",
+        "NextId": 21
+      },
+      {
+        "Id": 22,
+        "Text": "Nei takk. Jeg husker på det selv",
+        "NextId": 21
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 21,
+    "Text": "Har du forresten hørt om ekstra målinger ved luftveissymptomer?",
+    "Buttons": [
+      {
+        "Id": 23,
+        "Text": "Nei, fortell meg mer om dette",
+        "NextId": 22
+      },
+      {
+        "Id": 24,
+        "Text": "Ja",
+        "NextId": 22
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 22,
+    "Text": "Bra! I tillegg til 14 dagers morgen- og kveldsmålinger, er det viktig å utføre og registrere eventuelle astmasymptomer. Føler du at du trenger medisin, tar du  utblåsningsmålinger tre ganger etter hverandre, så tar du utvidelses(anfalls)medisin og etter 15-20 minutter, tar du tre nye utblåsningmålinger. Du kan registrere PEF metriverdiene lengre ned.”til verdier”.  ",
+    "Buttons": null,
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  },
+  {
+    "Id": 23,
+    "Text": "Ok, fortsett når du oppgir dine egne data",
+    "Buttons": [
+      {
+        "Id": 27,
+        "Text": "Vil bli gjenopptatt",
+        "NextId": 2
+      }
+    ],
+    "Action": null,
+    "NextId": null,
+    "Tag": null
+  }
+]

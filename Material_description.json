@@ -1,0 +1,39 @@
+[
+{
+    "lang" : "FI",
+    "material" : [
+        { "Title" : "Pef mittaus", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/PEF.mp4", "Description": "Video pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/PEF_fi.png"},
+        { "Title" : "Easyhaler mittaus", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/Easyhaler.mp4", "Description" : "Video Easyhaler:n käytöstä", "Thumbnail" : "http://s4h.fi/indemand/fi/Easyhaler.png"},
+        { "Title" : "Juoksurasitustesti", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/juoksu.html", "Description" : "Juoksurasitustesti ohje", "Thumbnail" : "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"},
+        { "Title" : "Pef kotiseuranta", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/pef-ohje.html", "Description" : "Ohje pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/Pef_ohje_html.png"}
+    ]
+},
+{
+    "lang" : "NO",
+    "material" : [
+        { "Title" : "Pef mittaus NO", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/no/PEF.mp4", "Description": "Video pef-kotiseurantaan NO", "Thumbnail" : "http://s4h.fi/indemand/no/PEF.png"},
+        { "Title" : "Easyhaler mittaus NO", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/Easyhaler.mp4", "Description" : "Video Easyhaler:n käytöstä NO", "Thumbnail" : "http://s4h.fi/indemand/fi/Easyhaler.png"},
+        { "Title" : "Juoksurasitustesti NO", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/juoksu.html", "Description" : "Juoksurasitustesti ohje NO", "Thumbnail" : "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"},
+        { "Title" : "Pef kotiseuranta NO", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/pef-ohje.html", "Description" : "Ohje pef-kotiseurantaan NO", "Thumbnail" : "http://s4h.fi/indemand/fi/Pef_ohje_html.png"}
+    ]
+},
+{
+    "lang" : "EN",
+    "material" : [
+        { "Title" : "Pef mittaus EN", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/PEF.mp4", "Description": "Video pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/PEF_fi.png"},
+        { "Title" : "Easyhaler mittaus EN", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/Easyhaler.mp4", "Description" : "Video Easyhaler:n käytöstä", "Thumbnail" : "http://s4h.fi/indemand/fi/Easyhaler.png"},
+        { "Title" : "Juoksurasitustesti EN", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/juoksu.html", "Description" : "Juoksurasitustesti ohje", "Thumbnail" : "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"},
+        { "Title" : "Pef kotiseuranta EN", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/pef-ohje.html", "Description" : "Ohje pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/Pef_ohje_html.png"}
+    ]
+},
+{
+    "lang" : "SV",
+    "material" : [
+        { "Title" : "Pef mittaus SV", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/PEF.mp4", "Description": "Video pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/PEF_fi.png"},
+        { "Title" : "Easyhaler mittaus SV", "Type": "VIDEO", "Url" : "http://s4h.fi/indemand/fi/Easyhaler.mp4", "Description" : "Video Easyhaler:n käytöstä", "Thumbnail" : "http://s4h.fi/indemand/fi/Easyhaler.png"},
+        { "Title" : "Juoksurasitustesti SV", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/juoksu.html", "Description" : "Juoksurasitustesti ohje", "Thumbnail" : "http://s4h.fi/indemand/fi/Juoksurasitus_ohje_html.png"},
+        { "Title" : "Pef kotiseuranta SV", "Type": "HTML", "Url" : "http://s4h.fi/indemand/fi/pef-ohje.html", "Description" : "Ohje pef-kotiseurantaan", "Thumbnail" : "http://s4h.fi/indemand/fi/Pef_ohje_html.png"}
+    ]
+}
+
+]
