@@ -1,0 +1,141 @@
+Ohjeita:
+
+astmatti-hakemistossa on TOIMIVA versio (kehitä tätä)
+
+Kehitysversio, jota voi ajaa Android emulaattorissa on hakemistossa C:\_Omat\Business\Seppo\clear_test\clear_test
+- aja emulaattorissa komennolla npm run android (käynnistä ensin emulaattori)
+- jos herjaa että JS Server ei toimi -> tarkista onko Wamp tulilla (voi olla vaikka  wamp ikonia ei näy) TAI herjaa ettei löydä komentoa edes komentoa
+react-native run-android -> npm install -g react-native-cli -> asentaa uudelleen
+
+JOS Metro bundler ei lähde käyntiin ollenkaan:
+- tarkista ettei oletuportti 8081 ole käytössä 
+- \node_modules\metro-config\src\defaults\blacklist.js -> tee ao. muutokset
+// var sharedBlacklist = [
+//   /node_modules[/\\]react[/\\]dist[/\\].*/,
+//   /website\/node_modules\/.*/,
+//   /heapCapture\/bundle\.js/,
+//   /.*\/__tests__\/.*/
+// ];
+
+var sharedBlacklist = [
+  /node_modules[\/\\]react[\/\\]dist[\/\\].*/,
+  /website\/node_modules\/.*/,
+  /heapCapture\/bundle\.js/,
+  /.*\/__tests__\/.*/
+
+];
+
+Luuriin asennettava softa on hakemistossa C:\temp\clear_test\clear_test
+- käännä apk paketti 3:lla komennolla (c:\temp\clear_test-hakemistossa) 
+react-native bundle --dev false --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
+
+- HUOM! Älä muuta bundle-output:n nimeä (esimerkiksi index.bundle:ksi, koska apk-paketin rakentaja ei löydä sitä)
+
+cd android/
+gradlew assembleDebug
+
+- toimii kyllä: react-native run-android (mutta mistään ei löydy apk-pakettia) -> tällä voit testata esim. emulaattorissa
+
+- android_key:n salasana KEYSTORE:lle on astmatti
+- android_key:n salasana KEY:lle on indemand
+
+- Jos käännät paketin Android Studiolla, ei se osaa kääntää mukaan bundleja -> ei toimi luurissa (emulaattorissa kyllä toimii)
+- sitä varten tee ensin sertifikaatti, jonka voi tehdä
+1) Android Studio:lla -> Build -> Generate Signed Apk -> tallentaa jks.filu
+2) keytool:lla (alla polku ja syntaksi)
+
+C:\Android_studio\jre\bin\keytool
+keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+JA NÄILLÄ KÄÄNNÄT release apk:n, jonka voi julkaista Play kaupassa
+cd android
+gradlew assembleRelease
+
+- lokit saa näkyviin näin:
+react-native log-android
+
+
+------------------------------
+Fontteja:
+1) npm install react-native-typography --save
+
+Lokalisointi
+1) npm install react-native-i18n --save
+1.1) react-native link react-native-i18n
+2) lisää android/setting.gradle-filuun:
+include ':app', ':react-native-i18n'
+project(':react-native-i18n').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-i18n/android')
+
+3) Lisää ./android/settings.gradle filuun:
+	dependencies {
+    // ...
+    compile project(':react-native-i18n')
+}
+
+4) Lisää ./android/app/src/main/java/your/bundle/MainApplication.java-filuun:
+import com.AlexanderZaytsev.RNI18n.RNI18nPackage; // <-- Add to ReactNativeI18n to the imports
+ja 
+new RNI18nPackage(), // <-- Add it to the packages list
+
+5) En tiedä onko merkitystä, muuta 	compile "com.android.support:appcompat-v7:27.1.1" (oli ennen 27.0.0) app/build.gradle
+
+------------------
+React Native Elements
+npm install --save react-native-elements
+
+
+----------------------------------
+Video thumbnail:
+1) npm install react-native-thumbnail-video --save -> EI TARVITA
+
+-----------------------------------------------------------
+1) Webview (joka on core:ssa) korvautuu uudella komponentilla react-native-webview
+npm install react-native-webview --save
+react-native link react-native-webview
+
+--------------------
+XCode:
+1) mainjs.bundle:a ei päivitetä ilm. automaattisesti, joten XCode tuntuu aina kääntävän vanhaa versiota -> react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios
+
+2) jos paketteja puuttuu -> npm install ja sen perään react-native link
+
+
+----------------------------------
+4.1.2019
+- uusi wheel picker: npm install react-native-wheel-picker-android --save
+react-native link react-native-wheel-picker-android
+- npm install react-native-view-overflow --save
+react-native link react-native-view-overflow
+
+----------------------------
+8.2.2019
+- react-native-svg
+- rn-fetch-blob
+- react-native-svg-charts
+
+----------------------------------
+
+Press Cmd + M on emulator screen
+Go to Dev settings > Debug server host & port for device
+Set localhost:8081
+Rerun the android app: react-native run-android
+
+Debugger is connected now!
+
+---------------------
+PEF LOG : Google Play
+
+-----------------------------
+Jos git push jää jumiin -> laita Savonian VPN päälle -> push (ilm käyttöoikeus asia)
+
+--------------
+ÄLÄ käytä react-native-upgrade -> nollaa kaikki .gradle filut
+
+--------------------
+Jos herjaa dex:stä tai että muisti loppuu -> laita multidex päälle 
+Voi kokeilla File/Invalidate Caches ...
+
+-----------------------------------------
+Jos ikonit eivät näy emulaattorissa/päätelaitteessa:
+Edit android/app/build.gradle ( NOT android/build.gradle ) and add the following:
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"

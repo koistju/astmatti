@@ -1,0 +1,114 @@
+C:\Users\ktkoiju>gpg --full-generate-key
+gpg (GnuPG) 2.2.10; Copyright (C) 2018 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Valitse millaisen avaimen haluat:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (vain allekirjoitus)
+   (4) RSA (vain allekirjoitus)
+Valintasi?
+RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+Halutun avaimen koko on 4096 bittiä
+Kuinka kauan avaimen tulee olla voimassa.
+        0 = Avain ei vanhene koskaan
+     <n>  = Avain vanhenee n päivän kuluttua
+     <n>w = Avain vanhenee n viikon kuluttua
+     <n>m = Avain vanhenee n kuukauden kuluttua
+     <n>y = Avain vanhenee n vuoden kuluttua
+Avain on voimassa? (0)
+Key does not expire at all
+Is this correct? (y/N) y
+
+GnuPG needs to construct a user ID to identify your key.
+
+Oikea nimi: Jussi Koistinen
+Sähköpostiosoite: jussi.koistinen@tmijussikoistinen.fi
+Huomautus:
+Valitsit seuraavan käyttäjätunnuksen:
+    "Jussi Koistinen <jussi.koistinen@tmijussikoistinen.fi>"
+
+Muuta (N)imi, (H)uomautus, (S)ähköposti vai (O)k/(L)opeta?o
+Tarvitaan paljon satunnaislukuja.  Voit suorittaa muita toimintoja
+(kirjoittaa näppäimistöllä, liikuttaa hiirtä, käyttää levyjä)
+alkulukujen luomisen aikana, tämä antaa satunnaislukugeneraattorille
+paremmat mahdollisuudet kerätä riittävästi entropiaa.
+Tarvitaan paljon satunnaislukuja.  Voit suorittaa muita toimintoja
+(kirjoittaa näppäimistöllä, liikuttaa hiirtä, käyttää levyjä)
+alkulukujen luomisen aikana, tämä antaa satunnaislukugeneraattorille
+paremmat mahdollisuudet kerätä riittävästi entropiaa.
+gpg: key C9252BA3B7A4443E marked as ultimately trusted
+gpg: directory 'C:/Users/ktkoiju/AppData/Roaming/gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as 'C:/Users/ktkoiju/AppData/Roaming/gnupg/openpgp-revocs.d\7D5C5097478BD93E27FCF5DBC9252BA3B7A4443E.rev'
+julkinen ja salainen avain on luotu ja allekirjoitettu.
+
+pub   rsa4096 2018-11-06 [SC]
+      7D5C5097478BD93E27FCF5DBC9252BA3B7A4443E
+uid                      Jussi Koistinen <jussi.koistinen@tmijussikoistinen.fi>
+sub   rsa4096 2018-11-06 [E]
+
+
+C:\Users\ktkoiju>gpg --list-secret-keys --keyid-format LONG
+C:/Users/ktkoiju/AppData/Roaming/gnupg/pubring.kbx
+--------------------------------------------------
+sec   rsa4096/C9252BA3B7A4443E 2018-11-06 [SC]
+      7D5C5097478BD93E27FCF5DBC9252BA3B7A4443E
+uid                 [ultimate] Jussi Koistinen <jussi.koistinen@tmijussikoistinen.fi>
+ssb   rsa4096/6C65BF571E79522E 2018-11-06 [E]
+
+
+C:\Users\ktkoiju>gpg --armor --export C9252BA3B7A4443E
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+mKCq12lrPzGLcZtGpk8RCKo/
+=KuE8
+-----END PGP PUBLIC KEY BLOCK-----
